@@ -25,11 +25,11 @@ namespace bibl.DBConnection
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Books> Books { get; set; }
+        public virtual DbSet<Book> Books { get; set; }
         public virtual DbSet<Departments> Departments { get; set; }
-        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Loans> Loans { get; set; }
-        public virtual DbSet<Readers> Readers { get; set; }
+        public virtual DbSet<Reader> Readers { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }
