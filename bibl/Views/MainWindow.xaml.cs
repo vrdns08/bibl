@@ -11,17 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using bibl.ViewModels;
 
 namespace bibl
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    namespace LibraryApp
     {
-        public MainWindow()
+        public partial class MainWindow : Window
         {
-            InitializeComponent();
+            public MainWindow()
+            {
+                InitializeComponent();
+                DataContext = new MainViewModel();
+            }
         }
     }
 }
